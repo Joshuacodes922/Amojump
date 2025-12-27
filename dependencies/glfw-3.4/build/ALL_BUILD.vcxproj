@@ -1,0 +1,314 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{913B71D9-72E1-311E-A75C-96C9CF5115F7}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\JoshuaS\source\repos\Vulkan Engine Cmake Build\dependencies\glfw-3.4\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/JoshuaS/source/repos/Vulkan Engine Cmake Build/dependencies/glfw-3.4/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\mingw64\mingw64\bin\cmake.exe "-SC:/Users/JoshuaS/source/repos/Vulkan Engine Cmake Build/dependencies/glfw-3.4" "-BC:/Users/JoshuaS/source/repos/Vulkan Engine Cmake Build/dependencies/glfw-3.4/build" --check-stamp-file "C:/Users/JoshuaS/source/repos/Vulkan Engine Cmake Build/dependencies/glfw-3.4/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\JoshuaS\source\repos\Vulkan Engine Cmake Build\dependencies\glfw-3.4\CMake\cmake_uninstall.cmake.in;C:\Users\JoshuaS\source\repos\Vulkan Engine Cmake Build\dependencies\glfw-3.4\CMake\glfw3Config.cmake.in;C:\Users\JoshuaS\source\repos\Vulkan Engine Cmake Build\dependencies\glfw-3.4\build\CMakeFiles\3.30.2\CMakeCCompiler.cmake;C:\Users\JoshuaS\source\repos\Vulkan Engine Cmake Build\dependencies\glfw-3.4\build\CMakeFiles\3.30.2\CMakeRCCompiler.cmake;C:\Users\JoshuaS\source\repos\Vulkan Engine Cmake Build\dependencies\glfw-3.4\build\CMakeFiles\3.30.2\CMakeSystem.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeCCompiler.cmake.in;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeCCompilerABI.c;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeCInformation.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeCompilerIdDetection.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeDependentOption.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeDetermineCCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeDetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeDetermineCompilerABI.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeDetermineCompilerId.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeDetermineCompilerSupport.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeDetermineRCCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeDetermineSystem.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeFindBinUtils.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakePackageConfigHelpers.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeParseImplicitLinkInfo.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeParseLibraryArchitecture.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeRCCompiler.cmake.in;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeSystem.cmake.in;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeTestCCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeTestCompilerCommon.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeTestRCCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CheckCSourceCompiles.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CheckIncludeFile.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CheckLibraryExists.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\TI-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\TIClang-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CompilerId\VS-10.vcxproj.in;C:\mingw64\mingw64\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\FindPackageMessage.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\FindThreads.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\GNUInstallDirs.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Internal\CMakeDetermineLinkerId.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Internal\CheckSourceCompiles.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Internal\FeatureTesting.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\WriteBasicConfigVersionFile.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\JoshuaS\source\repos\Vulkan Engine Cmake Build\dependencies\glfw-3.4\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/JoshuaS/source/repos/Vulkan Engine Cmake Build/dependencies/glfw-3.4/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\mingw64\mingw64\bin\cmake.exe "-SC:/Users/JoshuaS/source/repos/Vulkan Engine Cmake Build/dependencies/glfw-3.4" "-BC:/Users/JoshuaS/source/repos/Vulkan Engine Cmake Build/dependencies/glfw-3.4/build" --check-stamp-file "C:/Users/JoshuaS/source/repos/Vulkan Engine Cmake Build/dependencies/glfw-3.4/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\JoshuaS\source\repos\Vulkan Engine Cmake Build\dependencies\glfw-3.4\CMake\cmake_uninstall.cmake.in;C:\Users\JoshuaS\source\repos\Vulkan Engine Cmake Build\dependencies\glfw-3.4\CMake\glfw3Config.cmake.in;C:\Users\JoshuaS\source\repos\Vulkan Engine Cmake Build\dependencies\glfw-3.4\build\CMakeFiles\3.30.2\CMakeCCompiler.cmake;C:\Users\JoshuaS\source\repos\Vulkan Engine Cmake Build\dependencies\glfw-3.4\build\CMakeFiles\3.30.2\CMakeRCCompiler.cmake;C:\Users\JoshuaS\source\repos\Vulkan Engine Cmake Build\dependencies\glfw-3.4\build\CMakeFiles\3.30.2\CMakeSystem.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeCCompiler.cmake.in;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeCCompilerABI.c;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeCInformation.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeCompilerIdDetection.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeDependentOption.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeDetermineCCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeDetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeDetermineCompilerABI.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeDetermineCompilerId.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeDetermineCompilerSupport.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeDetermineRCCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeDetermineSystem.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeFindBinUtils.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakePackageConfigHelpers.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeParseImplicitLinkInfo.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeParseLibraryArchitecture.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeRCCompiler.cmake.in;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeSystem.cmake.in;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeTestCCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeTestCompilerCommon.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeTestRCCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CheckCSourceCompiles.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CheckIncludeFile.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CheckLibraryExists.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\TI-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\TIClang-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CompilerId\VS-10.vcxproj.in;C:\mingw64\mingw64\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\FindPackageMessage.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\FindThreads.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\GNUInstallDirs.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Internal\CMakeDetermineLinkerId.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Internal\CheckSourceCompiles.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Internal\FeatureTesting.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\WriteBasicConfigVersionFile.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\JoshuaS\source\repos\Vulkan Engine Cmake Build\dependencies\glfw-3.4\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/JoshuaS/source/repos/Vulkan Engine Cmake Build/dependencies/glfw-3.4/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\mingw64\mingw64\bin\cmake.exe "-SC:/Users/JoshuaS/source/repos/Vulkan Engine Cmake Build/dependencies/glfw-3.4" "-BC:/Users/JoshuaS/source/repos/Vulkan Engine Cmake Build/dependencies/glfw-3.4/build" --check-stamp-file "C:/Users/JoshuaS/source/repos/Vulkan Engine Cmake Build/dependencies/glfw-3.4/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\JoshuaS\source\repos\Vulkan Engine Cmake Build\dependencies\glfw-3.4\CMake\cmake_uninstall.cmake.in;C:\Users\JoshuaS\source\repos\Vulkan Engine Cmake Build\dependencies\glfw-3.4\CMake\glfw3Config.cmake.in;C:\Users\JoshuaS\source\repos\Vulkan Engine Cmake Build\dependencies\glfw-3.4\build\CMakeFiles\3.30.2\CMakeCCompiler.cmake;C:\Users\JoshuaS\source\repos\Vulkan Engine Cmake Build\dependencies\glfw-3.4\build\CMakeFiles\3.30.2\CMakeRCCompiler.cmake;C:\Users\JoshuaS\source\repos\Vulkan Engine Cmake Build\dependencies\glfw-3.4\build\CMakeFiles\3.30.2\CMakeSystem.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeCCompiler.cmake.in;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeCCompilerABI.c;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeCInformation.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeCompilerIdDetection.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeDependentOption.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeDetermineCCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeDetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeDetermineCompilerABI.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeDetermineCompilerId.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeDetermineCompilerSupport.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeDetermineRCCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeDetermineSystem.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeFindBinUtils.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakePackageConfigHelpers.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeParseImplicitLinkInfo.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeParseLibraryArchitecture.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeRCCompiler.cmake.in;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeSystem.cmake.in;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeTestCCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeTestCompilerCommon.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeTestRCCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CheckCSourceCompiles.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CheckIncludeFile.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CheckLibraryExists.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\TI-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\TIClang-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CompilerId\VS-10.vcxproj.in;C:\mingw64\mingw64\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\FindPackageMessage.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\FindThreads.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\GNUInstallDirs.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Internal\CMakeDetermineLinkerId.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Internal\CheckSourceCompiles.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Internal\FeatureTesting.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\WriteBasicConfigVersionFile.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\JoshuaS\source\repos\Vulkan Engine Cmake Build\dependencies\glfw-3.4\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/JoshuaS/source/repos/Vulkan Engine Cmake Build/dependencies/glfw-3.4/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\mingw64\mingw64\bin\cmake.exe "-SC:/Users/JoshuaS/source/repos/Vulkan Engine Cmake Build/dependencies/glfw-3.4" "-BC:/Users/JoshuaS/source/repos/Vulkan Engine Cmake Build/dependencies/glfw-3.4/build" --check-stamp-file "C:/Users/JoshuaS/source/repos/Vulkan Engine Cmake Build/dependencies/glfw-3.4/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\JoshuaS\source\repos\Vulkan Engine Cmake Build\dependencies\glfw-3.4\CMake\cmake_uninstall.cmake.in;C:\Users\JoshuaS\source\repos\Vulkan Engine Cmake Build\dependencies\glfw-3.4\CMake\glfw3Config.cmake.in;C:\Users\JoshuaS\source\repos\Vulkan Engine Cmake Build\dependencies\glfw-3.4\build\CMakeFiles\3.30.2\CMakeCCompiler.cmake;C:\Users\JoshuaS\source\repos\Vulkan Engine Cmake Build\dependencies\glfw-3.4\build\CMakeFiles\3.30.2\CMakeRCCompiler.cmake;C:\Users\JoshuaS\source\repos\Vulkan Engine Cmake Build\dependencies\glfw-3.4\build\CMakeFiles\3.30.2\CMakeSystem.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeCCompiler.cmake.in;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeCCompilerABI.c;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeCInformation.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeCompilerIdDetection.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeDependentOption.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeDetermineCCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeDetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeDetermineCompilerABI.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeDetermineCompilerId.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeDetermineCompilerSupport.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeDetermineRCCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeDetermineSystem.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeFindBinUtils.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakePackageConfigHelpers.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeParseImplicitLinkInfo.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeParseLibraryArchitecture.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeRCCompiler.cmake.in;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeSystem.cmake.in;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeTestCCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeTestCompilerCommon.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CMakeTestRCCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CheckCSourceCompiles.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CheckIncludeFile.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CheckLibraryExists.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\TI-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\TIClang-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\CompilerId\VS-10.vcxproj.in;C:\mingw64\mingw64\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\FindPackageMessage.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\FindThreads.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\GNUInstallDirs.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Internal\CMakeDetermineLinkerId.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Internal\CheckSourceCompiles.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Internal\FeatureTesting.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;C:\mingw64\mingw64\share\cmake-3.30\Modules\WriteBasicConfigVersionFile.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\JoshuaS\source\repos\Vulkan Engine Cmake Build\dependencies\glfw-3.4\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\JoshuaS\source\repos\Vulkan Engine Cmake Build\dependencies\glfw-3.4\build\ZERO_CHECK.vcxproj">
+      <Project>{C5B57B67-5164-3E9D-B1CC-9D92987B94C9}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\JoshuaS\source\repos\Vulkan Engine Cmake Build\dependencies\glfw-3.4\build\tests\allocator.vcxproj">
+      <Project>{00F3D010-9292-30E4-BEA4-B222579CDAA1}</Project>
+      <Name>allocator</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\JoshuaS\source\repos\Vulkan Engine Cmake Build\dependencies\glfw-3.4\build\examples\boing.vcxproj">
+      <Project>{E8A3EC53-32C4-3416-BF01-0B67D2862F61}</Project>
+      <Name>boing</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\JoshuaS\source\repos\Vulkan Engine Cmake Build\dependencies\glfw-3.4\build\tests\clipboard.vcxproj">
+      <Project>{664A982C-0063-3DFD-B5E6-DE6273CA55F5}</Project>
+      <Name>clipboard</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\JoshuaS\source\repos\Vulkan Engine Cmake Build\dependencies\glfw-3.4\build\tests\cursor.vcxproj">
+      <Project>{65348FD0-EDA7-3F80-A235-CCAE2BFC589B}</Project>
+      <Name>cursor</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\JoshuaS\source\repos\Vulkan Engine Cmake Build\dependencies\glfw-3.4\build\docs\docs.vcxproj">
+      <Project>{89B76533-D2B4-3F46-8302-495F1D80817E}</Project>
+      <Name>docs</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\JoshuaS\source\repos\Vulkan Engine Cmake Build\dependencies\glfw-3.4\build\tests\empty.vcxproj">
+      <Project>{BEB0BF59-0414-38B3-9903-9DCBE21A020A}</Project>
+      <Name>empty</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\JoshuaS\source\repos\Vulkan Engine Cmake Build\dependencies\glfw-3.4\build\tests\events.vcxproj">
+      <Project>{62645194-2895-3B19-845B-553F2C2F2CDC}</Project>
+      <Name>events</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\JoshuaS\source\repos\Vulkan Engine Cmake Build\dependencies\glfw-3.4\build\tests\gamma.vcxproj">
+      <Project>{9E0EA8C2-699B-315A-B6AA-C6C87DA076FF}</Project>
+      <Name>gamma</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\JoshuaS\source\repos\Vulkan Engine Cmake Build\dependencies\glfw-3.4\build\examples\gears.vcxproj">
+      <Project>{443F6DBD-8FA2-3767-BF81-4FCFA9E2E15B}</Project>
+      <Name>gears</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\JoshuaS\source\repos\Vulkan Engine Cmake Build\dependencies\glfw-3.4\build\src\glfw.vcxproj">
+      <Project>{B3929A5D-D566-35E8-A8E1-5F558457C5D4}</Project>
+      <Name>glfw</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\JoshuaS\source\repos\Vulkan Engine Cmake Build\dependencies\glfw-3.4\build\tests\glfwinfo.vcxproj">
+      <Project>{AF7DFE6D-0DB2-39EC-B996-3F8CC3E543D3}</Project>
+      <Name>glfwinfo</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\JoshuaS\source\repos\Vulkan Engine Cmake Build\dependencies\glfw-3.4\build\examples\heightmap.vcxproj">
+      <Project>{813169D3-C16A-3AE0-87C1-65EA90338731}</Project>
+      <Name>heightmap</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\JoshuaS\source\repos\Vulkan Engine Cmake Build\dependencies\glfw-3.4\build\tests\icon.vcxproj">
+      <Project>{EBBF8D49-95D9-3D0E-BE3C-D8A61608DD01}</Project>
+      <Name>icon</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\JoshuaS\source\repos\Vulkan Engine Cmake Build\dependencies\glfw-3.4\build\tests\iconify.vcxproj">
+      <Project>{B11E75C2-8E7C-32F0-9B80-8F4610AA2FA5}</Project>
+      <Name>iconify</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\JoshuaS\source\repos\Vulkan Engine Cmake Build\dependencies\glfw-3.4\build\tests\inputlag.vcxproj">
+      <Project>{27141C2B-D8BA-3994-9A64-B63457B65F57}</Project>
+      <Name>inputlag</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\JoshuaS\source\repos\Vulkan Engine Cmake Build\dependencies\glfw-3.4\build\tests\joysticks.vcxproj">
+      <Project>{CBB48B29-ECB3-3871-8707-C5BCA2D705F5}</Project>
+      <Name>joysticks</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\JoshuaS\source\repos\Vulkan Engine Cmake Build\dependencies\glfw-3.4\build\tests\monitors.vcxproj">
+      <Project>{0E200137-9A26-364E-812F-DCB7BD25A763}</Project>
+      <Name>monitors</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\JoshuaS\source\repos\Vulkan Engine Cmake Build\dependencies\glfw-3.4\build\tests\msaa.vcxproj">
+      <Project>{A3DD7A9F-DB00-3160-8979-BC2289910715}</Project>
+      <Name>msaa</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\JoshuaS\source\repos\Vulkan Engine Cmake Build\dependencies\glfw-3.4\build\examples\offscreen.vcxproj">
+      <Project>{8B688EFC-AFC2-3F61-B056-5CAA9F913C74}</Project>
+      <Name>offscreen</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\JoshuaS\source\repos\Vulkan Engine Cmake Build\dependencies\glfw-3.4\build\examples\particles.vcxproj">
+      <Project>{166C0AF1-1186-30A2-B9D8-C7ACD103CB69}</Project>
+      <Name>particles</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\JoshuaS\source\repos\Vulkan Engine Cmake Build\dependencies\glfw-3.4\build\tests\reopen.vcxproj">
+      <Project>{49D16945-139F-340F-AF00-9039AC60A6DD}</Project>
+      <Name>reopen</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\JoshuaS\source\repos\Vulkan Engine Cmake Build\dependencies\glfw-3.4\build\examples\sharing.vcxproj">
+      <Project>{673FA600-2A31-3134-B3EC-3B8B9E0AAF75}</Project>
+      <Name>sharing</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\JoshuaS\source\repos\Vulkan Engine Cmake Build\dependencies\glfw-3.4\build\examples\splitview.vcxproj">
+      <Project>{F84244F9-0722-32C9-BD24-11143B651D8A}</Project>
+      <Name>splitview</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\JoshuaS\source\repos\Vulkan Engine Cmake Build\dependencies\glfw-3.4\build\tests\tearing.vcxproj">
+      <Project>{47217E1A-4273-3785-8996-704C9EC0A4EA}</Project>
+      <Name>tearing</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\JoshuaS\source\repos\Vulkan Engine Cmake Build\dependencies\glfw-3.4\build\tests\threads.vcxproj">
+      <Project>{38E8C2BE-DDD5-3255-A076-71AF382C6A73}</Project>
+      <Name>threads</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\JoshuaS\source\repos\Vulkan Engine Cmake Build\dependencies\glfw-3.4\build\tests\timeout.vcxproj">
+      <Project>{BB476226-09ED-3409-ADEF-A9C900BFA3CB}</Project>
+      <Name>timeout</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\JoshuaS\source\repos\Vulkan Engine Cmake Build\dependencies\glfw-3.4\build\tests\title.vcxproj">
+      <Project>{A571C82D-532F-36CD-A05A-DFCF033438C0}</Project>
+      <Name>title</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\JoshuaS\source\repos\Vulkan Engine Cmake Build\dependencies\glfw-3.4\build\examples\triangle-opengl.vcxproj">
+      <Project>{7803370F-9D99-3E52-A180-A901F64085A0}</Project>
+      <Name>triangle-opengl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\JoshuaS\source\repos\Vulkan Engine Cmake Build\dependencies\glfw-3.4\build\examples\triangle-opengles.vcxproj">
+      <Project>{A524EF81-7121-31CA-A913-19956665C041}</Project>
+      <Name>triangle-opengles</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\JoshuaS\source\repos\Vulkan Engine Cmake Build\dependencies\glfw-3.4\build\tests\triangle-vulkan.vcxproj">
+      <Project>{CA428F34-A466-341E-96DE-E3CBA3BFA104}</Project>
+      <Name>triangle-vulkan</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\JoshuaS\source\repos\Vulkan Engine Cmake Build\dependencies\glfw-3.4\build\examples\wave.vcxproj">
+      <Project>{C2FE8543-B12F-3747-AC37-C9FFB60A996C}</Project>
+      <Name>wave</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\JoshuaS\source\repos\Vulkan Engine Cmake Build\dependencies\glfw-3.4\build\tests\window.vcxproj">
+      <Project>{51FB47F2-270E-39B1-9175-11C3B7A3751D}</Project>
+      <Name>window</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\JoshuaS\source\repos\Vulkan Engine Cmake Build\dependencies\glfw-3.4\build\examples\windows.vcxproj">
+      <Project>{23ACA529-ABE1-3C72-94D2-2BF088028703}</Project>
+      <Name>windows</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

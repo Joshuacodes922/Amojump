@@ -1,0 +1,6 @@
+# CMake generation dependency list for this directory.
+C:/Users/JoshuaS/source/repos/Vulkan Engine Cmake Build/dependencies/glfw-3.4/docs/CMakeLists.txt
+C:/Users/JoshuaS/source/repos/Vulkan Engine Cmake Build/dependencies/glfw-3.4/docs/Doxyfile.in
+C:/mingw64/mingw64/share/cmake-3.30/Modules/FindDoxygen.cmake
+C:/mingw64/mingw64/share/cmake-3.30/Modules/FindPackageHandleStandardArgs.cmake
+C:/mingw64/mingw64/share/cmake-3.30/Modules/FindPackageMessage.cmake

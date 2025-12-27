@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\JoshuaS\source\repos\Vulkan Engine Cmake Build\dependencies\glfw-3.4\tests\window.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\JoshuaS\source\repos\Vulkan Engine Cmake Build\dependencies\glfw-3.4\deps\glad\gl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\JoshuaS\source\repos\Vulkan Engine Cmake Build\dependencies\glfw-3.4\tests\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{405DA8E3-FDC9-38BF-888F-C49C87FD92AE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{BC944282-0CD5-3EA9-8F3E-96643210C02C}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
