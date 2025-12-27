@@ -1,0 +1,3 @@
+"C:/Users/JoshuaS/source/repos/Vulkan Engine Cmake Build/dependencies/slang-2025.23.1-windows-x86_64/bin/slangc.exe"  "C:/Users/JoshuaS/source/repos/Vulkan Engine Cmake Build/shaders/vertex.slang"  -target spirv -profile glsl_450 -entry vertMain  -o "C:/Users/JoshuaS/source/repos/Vulkan Engine Cmake Build/shaders/vertex.spv"
+
+"C:/Users/JoshuaS/source/repos/Vulkan Engine Cmake Build/dependencies/slang-2025.23.1-windows-x86_64/bin/slangc.exe"  "C:/Users/JoshuaS/source/repos/Vulkan Engine Cmake Build/shaders/vertex.slang" -target spirv -profile glsl_450 -entry fragMain  -o "C:/Users/JoshuaS/source/repos/Vulkan Engine Cmake Build/shaders/fragment.spv"
